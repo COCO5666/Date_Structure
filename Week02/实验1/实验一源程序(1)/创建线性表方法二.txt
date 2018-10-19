@@ -1,0 +1,2 @@
+ElemType b[]={'a','b','c','d','m'};
+	CreateList(L,b,5);

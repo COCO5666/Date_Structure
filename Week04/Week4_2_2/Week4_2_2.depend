@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1539501399 source:d:\0coco\本科\大二上学期\数据结构\week04\week4_2_2\main.cpp
+	"LinkQueue.cpp"
+
+1539501443 d:\0coco\本科\大二上学期\数据结构\week04\week4_2_2\linkqueue.cpp
+	<stdio.h>
+	<malloc.h>
+	<iostream>
+

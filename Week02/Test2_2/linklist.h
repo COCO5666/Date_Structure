@@ -1,0 +1,6 @@
+#ifndef LINKLIST_H_INCLUDED
+#define LINKLIST_H_INCLUDED
+
+
+
+#endif // LINKLIST_H_INCLUDED

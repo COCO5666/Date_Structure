@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1539487765 source:d:\0coco\本科\大二上学期\数据结构\数据结构-3\test_cb\main.cpp
+	"LinkStack.cpp"
+
+1539487925 d:\0coco\本科\大二上学期\数据结构\数据结构-3\test_cb\linkstack.cpp
+	<iostream>
+	<malloc.h>
+

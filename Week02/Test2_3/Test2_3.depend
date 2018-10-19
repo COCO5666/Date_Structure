@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1537781083 source:d:\0coco\本科\大二上学期\数据结构\数据结构-2\test2_3\main.cpp
+	"LinkList.h"
+
+1537781017 d:\0coco\本科\大二上学期\数据结构\数据结构-2\test2_3\linklist.h
+	"LinkList.cpp"
+
+1537781136 d:\0coco\本科\大二上学期\数据结构\数据结构-2\test2_3\linklist.cpp
+	<iostream>
+	<malloc.h>
+

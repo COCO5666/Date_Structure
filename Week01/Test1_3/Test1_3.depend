@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1537778350 source:d:\0coco\本科\大二上学期\数据结构\数据结构-1\test1_3\main.cpp
+	<malloc.h>
+	"SqList.h"
+
+1537758383 d:\0coco\本科\大二上学期\数据结构\数据结构-1\test1_3\sqlist.cpp
+	<iostream>
+
+1537758420 d:\0coco\本科\大二上学期\数据结构\数据结构-1\test1_3\sqlist.h
+	"SqList.cpp"
+

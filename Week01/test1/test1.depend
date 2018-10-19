@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1536917036 source:c:\users\409\desktop\test1\main.cpp
+	<stdio.h>
+	<malloc.h>
+	<iostream>
+
+1536919558 source:c:\users\409\desktop\数据结构-2\test1\main.cpp
+	<stdio.h>
+	<malloc.h>
+	<iostream>
+

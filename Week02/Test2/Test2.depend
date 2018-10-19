@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1537519289 source:c:\users\409\desktop\数据结构-3\test2\linklist.cpp
+	<stdio.h>
+	<malloc.h>
+
+1537519299 source:c:\users\409\desktop\数据结构-3\test2\main.cpp
+	"linklist.cpp"
+
+1537519510 c:\users\409\desktop\数据结构-3\test2\linklist.cpp
+	<stdio.h>
+	<malloc.h>
+

@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Test3_F_1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\409\AppData\Local\Temp\RSPA5E3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Test3_F_1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Users\409\Desktop\Week05\Test3_F_1\main.cpp"
+"C:\Users\409\Desktop\Week05\Test3_F_1\SqString.cpp"
+]
+Creating command line "cl.exe @C:\Users\409\AppData\Local\Temp\RSPA5E3.tmp" 
+Creating temporary file "C:\Users\409\AppData\Local\Temp\RSPA5E4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Test3_F_1.pdb" /debug /machine:I386 /out:"Debug/Test3_F_1.exe" /pdbtype:sept 
+.\Debug\main.obj
+.\Debug\SqString.obj
+]
+Creating command line "link.exe @C:\Users\409\AppData\Local\Temp\RSPA5E4.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+c:\users\409\desktop\week05\test3_f_1\main.cpp(33) : error C2065: 'SubStr' : undeclared identifier
+c:\users\409\desktop\week05\test3_f_1\main.cpp(36) : error C2065: 'Concat' : undeclared identifier
+SqString.cpp
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(5) : error C2065: 'SqString' : undeclared identifier
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(5) : error C2065: 's' : undeclared identifier
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(5) : error C2062: type 'char' unexpected
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(6) : error C2143: syntax error : missing ';' before '{'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(6) : error C2447: missing function header (old-style formal list?)
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(13) : error C2146: syntax error : missing ')' before identifier 's'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(13) : error C2182: 'DispStr' : illegal use of type 'void'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(13) : error C2059: syntax error : ')'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(14) : error C2143: syntax error : missing ';' before '{'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(14) : error C2447: missing function header (old-style formal list?)
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(18) : error C2146: syntax error : missing ')' before identifier 's'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(18) : error C2059: syntax error : ')'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(19) : error C2143: syntax error : missing ';' before '{'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(19) : error C2447: missing function header (old-style formal list?)
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(23) : error C2146: syntax error : missing ';' before identifier 'InsStr'
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(23) : error C2501: 'SqString' : missing storage-class or type specifiers
+c:\users\409\desktop\week05\test3_f_1\sqstring.cpp(23) : fatal error C1004: unexpected end of file found
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+Test3_F_1.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
