@@ -1,8 +1,10 @@
+#include <cstdio>
+
 #include "LiString.h"
 
 int main()
 {
-    LiString *s,*s1,*s2,*s3,*s4;
+    LinkStrNode *s,*s1,*s2,*s3,*s4;
 	/*
     int i;
     char a[20],b[20];
@@ -23,7 +25,7 @@ int main()
     s2=InsStr(s,9,s1);
     printf("    （5）输出串s2:");DispStr(s2);
     printf("    （6）删除串s第2个字符开始的3个字符而产生串s2\n");
-    s2=DelStr(s,2,3);
+	s2=DelStr(s,2,3);
     printf("    （7）输出串s2：");DispStr(s2);
     printf("    （8）将串s第2字符开始的5个字符替换成串s1而产生串s2\n");
     s2=RepStr(s,2,5,s1);
@@ -32,6 +34,6 @@ int main()
     s3=SubStr(s,2,10);
     printf("    （11）输出串s3:");DispStr(s3);
     printf("    （12）将串s1和s2连接起来而产生串s4\n");
-    s4=Concat(s1,s2);
+    s4=Concatenate(s1,s2);
     printf("    （13）输出串s4：");DispStr(s4);
 }
