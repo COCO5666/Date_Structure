@@ -171,7 +171,7 @@ LinkStrNode *SubStr(LinkStrNode *s, int i, int j)
 	length = StrLength(s);
 	if(i<0 || j<0 || i-1+j>length)
 		return str;
-	for(count=0; count<i; count++)
+	for(count=0; count<i-1; count++)
 		p = p->next;
 	for(count=0; count<j; count++)
 	{
