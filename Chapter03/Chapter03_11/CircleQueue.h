@@ -13,3 +13,4 @@ typedef struct CircleQueue
 void Initialize(CQ *&q);
 bool EnterQueue(CQ *&q, ElemT e);
 bool ExitQueue(CQ *&q, ElemT &e);
+void Destroy(CQ *&q);

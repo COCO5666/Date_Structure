@@ -37,4 +37,8 @@ bool ExitQueue(CQ *&q, ElemT &e)
 	q->count--;
 	return true;
 }
-	
+
+void Destroy(CQ *&q)
+{
+	free(q);
+}
