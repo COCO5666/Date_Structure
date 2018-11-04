@@ -7,7 +7,7 @@ void main()
 	TSMatrix x,y;
 	CreatMat(x,a);
 	CreatMat(y,b);
-	printf("a的三元组:\n");DispMat(x);
-	printf("b的三元组:\n");DispMat(y);
+	printf("a鐨勪笁鍏冪粍:\n");DispMat(x);
+	printf("b鐨勪笁鍏冪粍:\n");DispMat(y);
 
 }

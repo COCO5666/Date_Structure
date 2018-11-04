@@ -1,30 +1,30 @@
 #include <stdio.h>
 #define M 4
 #define N 4
-#define MaxSize  100         //¾ØÕóÖĞ·ÇÁãÔªËØ×î¶à¸öÊı
+#define MaxSize  100         //çŸ©é˜µä¸­éé›¶å…ƒç´ æœ€å¤šä¸ªæ•°
 typedef int ElemType;
 typedef struct
 {
-	int r;					//ĞĞºÅ
-	int c;					//ÁĞºÅ
-	ElemType d;				//ÔªËØÖµ
-} TupNode;					//ÈıÔª×é¶¨Òå
+	int r;					//è¡Œå·
+	int c;					//åˆ—å·
+	ElemType d;				//å…ƒç´ å€¼
+} TupNode;					//ä¸‰å…ƒç»„å®šä¹‰
 typedef struct 
 {	
-	int rows;				//ĞĞÊı
-	int cols;				//ÁĞÊı
-	int nums;				//·ÇÁãÔªËØ¸öÊı
+	int rows;				//è¡Œæ•°
+	int cols;				//åˆ—æ•°
+	int nums;				//éé›¶å…ƒç´ ä¸ªæ•°
 	TupNode data[MaxSize];
-} TSMatrix;					//ÈıÔª×éË³Ğò±í¶¨Òå
+} TSMatrix;					//ä¸‰å…ƒç»„é¡ºåºè¡¨å®šä¹‰
 
-void CreatMat(TSMatrix &t,ElemType A[M][N])  //´ÓÒ»¸ö¶şÎ¬Ï¡Êè¾ØÕó´´½¨ÆäÈıÔª×é±íÊ¾
+void CreatMat(TSMatrix &t,ElemType A[M][N])  //ä»ä¸€ä¸ªäºŒç»´ç¨€ç–çŸ©é˜µåˆ›å»ºå…¶ä¸‰å…ƒç»„è¡¨ç¤º
 {
 	int i,j;
 	t.rows=M;t.cols=N;t.nums=0;
 	for (i=0;i<M;i++)
 	{
 		for (j=0;j<N;j++) 
-			if (A[i][j]!=0) 	//Ö»´æ´¢·ÇÁãÔªËØ
+			if (A[i][j]!=0) 	//åªå­˜å‚¨éé›¶å…ƒç´ 
 			{
 				t.data[t.nums].r=i;t.data[t.nums].c=j;
 				t.data[t.nums].d=A[i][j];t.nums++;
@@ -33,10 +33,10 @@ void CreatMat(TSMatrix &t,ElemType A[M][N])  //´ÓÒ»¸ö¶şÎ¬Ï¡Êè¾ØÕó´´½¨ÆäÈıÔª×é±íÊ
 }
 
 
-void DispMat(TSMatrix t)		//Êä³öÈıÔª×é
+void DispMat(TSMatrix t)		//è¾“å‡ºä¸‰å…ƒç»„
 {
 	int i;
-	if (t.nums<=0)			//Ã»ÓĞ·ÇÁãÔªËØÊ±·µ»Ø
+	if (t.nums<=0)			//æ²¡æœ‰éé›¶å…ƒç´ æ—¶è¿”å›
 		return;
 	printf("\t%d\t%d\t%d\n",t.rows,t.cols,t.nums);
 	printf("\t------------------\n");
