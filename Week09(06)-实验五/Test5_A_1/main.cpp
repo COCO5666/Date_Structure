@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include "btree.cpp"
+#include "LinkBinaryTree.h"
 void main()
-{	BTNode *b,*p,*lp,*rp;;
-	CreateBTNode(b,"A(B(D,E(H(J,K(L,M(,N))))),C(F,G(,I)))");
+{	LBTNode *b,*p,*lp,*rp;;
+	CreateLBTree(b,"A(B(D,E(H(J,K(L,M(,N))))),C(F,G(,I)))");
 	printf("二叉树的基本运算如下:\n");
 	printf("  (1)输出二叉树:");DispBTNode(b);printf("\n");
 	printf("  (2)H节点:");

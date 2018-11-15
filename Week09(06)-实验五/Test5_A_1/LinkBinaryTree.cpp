@@ -19,4 +19,20 @@ void CreateLBTree(LBTNode *&b, char *str)
 			k=2; break;
 		default:
 			p = (LBTNode *)malloc(sizeof(LBTNode));
-
+			p->data=ch;
+			p->lchild=p->rchild=NULL;
+			if(b==NULL)
+				b = p;
+			else
+			{
+				switch(k)
+				{
+				case 1:St[top]->lchild=p;break;
+				case 2:St[top]->rchild=p;break;
+				}
+			}
+		}
+		j++;
+		ch = str[j];
+	}
+}
