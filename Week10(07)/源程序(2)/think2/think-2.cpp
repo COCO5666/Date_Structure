@@ -2,33 +2,33 @@
 #include <stdio.h>
 #include <malloc.h>
 
-void PreOrder(BTNode *b)  		//ÏÈĞò±éÀúµÄµİ¹éËã·¨
+void PreOrder(BTNode *b)  		//å…ˆåºéå†çš„é€’å½’ç®—æ³•
 {
 	if (b!=NULL)  
 	{	
-		printf("%c ",b->data);	//·ÃÎÊ¸ù½Úµã
-		PreOrder(b->lchild);	//µİ¹é·ÃÎÊ×ó×ÓÊ÷
-		PreOrder(b->rchild);	//µİ¹é·ÃÎÊÓÒ×ÓÊ÷
+		printf("%c ",b->data);	//è®¿é—®æ ¹èŠ‚ç‚¹
+		PreOrder(b->lchild);	//é€’å½’è®¿é—®å·¦å­æ ‘
+		PreOrder(b->rchild);	//é€’å½’è®¿é—®å³å­æ ‘
 	}
 }
 
-void InOrder(BTNode *b)   		//ÖĞĞò±éÀúµÄµİ¹éËã·¨
+void InOrder(BTNode *b)   		//ä¸­åºéå†çš„é€’å½’ç®—æ³•
 {
 	if (b!=NULL)  
 	{	
-		InOrder(b->lchild);		//µİ¹é·ÃÎÊ×ó×ÓÊ÷
-		printf("%c ",b->data);	        //·ÃÎÊ¸ù½Úµã
-		InOrder(b->rchild);		//µİ¹é·ÃÎÊÓÒ×ÓÊ÷
+		InOrder(b->lchild);		//é€’å½’è®¿é—®å·¦å­æ ‘
+		printf("%c ",b->data);	        //è®¿é—®æ ¹èŠ‚ç‚¹
+		InOrder(b->rchild);		//é€’å½’è®¿é—®å³å­æ ‘
 	}
 }
 
-void PostOrder(BTNode *b) 		//ºóĞò±éÀúµÄµİ¹éËã·¨
+void PostOrder(BTNode *b) 		//ååºéå†çš„é€’å½’ç®—æ³•
 {
 	if (b!=NULL)  
 	{	
-		PostOrder(b->lchild);	//µİ¹é·ÃÎÊ×ó×ÓÊ÷
-		PostOrder(b->rchild);	//µİ¹é·ÃÎÊÓÒ×ÓÊ÷
-		printf("%c ",b->data);	//·ÃÎÊ¸ù½Úµã
+		PostOrder(b->lchild);	//é€’å½’è®¿é—®å·¦å­æ ‘
+		PostOrder(b->rchild);	//é€’å½’è®¿é—®å³å­æ ‘
+		printf("%c ",b->data);	//è®¿é—®æ ¹èŠ‚ç‚¹
 	}
 }
 
@@ -36,11 +36,11 @@ void main()
 {
 	BTNode * b;
 	b=CreateBT1("ABCD","BCAD",4);
-	printf("ÏÈĞò±éÀúĞòÁĞ:\n");
-	printf("    µİ¹éËã·¨:");PreOrder(b);printf("\n");
-	printf("ÖĞĞò±éÀúĞòÁĞ:\n");
-	printf("    µİ¹éËã·¨:");InOrder(b);printf("\n");
-	printf("ºóĞò±éÀúĞòÁĞ:\n");
-	printf("    µİ¹éËã·¨:");PostOrder(b);printf("\n");
+	printf("å…ˆåºéå†åºåˆ—:\n");
+	printf("    é€’å½’ç®—æ³•:");PreOrder(b);printf("\n");
+	printf("ä¸­åºéå†åºåˆ—:\n");
+	printf("    é€’å½’ç®—æ³•:");InOrder(b);printf("\n");
+	printf("ååºéå†åºåˆ—:\n");
+	printf("    é€’å½’ç®—æ³•:");PostOrder(b);printf("\n");
 }
  

@@ -6,14 +6,14 @@ void main()
 {
 	BTNode *b;
 	CreateBTNode(b,"A(B(D,E(H(J,K(L,M(,N))))),C(F,G(,I)))"); 
-	printf("¶þ²æÊ÷b:");DispBTNode(b);printf("\n");
-	printf("ÏÈÐò±éÀúÐòÁÐ:\n");
-	printf("  ·ÇµÝ¹éËã·¨:");PreOrder1(b);
-	printf("ÖÐÐò±éÀúÐòÁÐ:\n");
-	printf("  ·ÇµÝ¹éËã·¨:");InOrder1(b);
-	printf("ºóÐò±éÀúÐòÁÐ:\n");
-	printf("  ·ÇµÝ¹éËã·¨:");PostOrder1(b);	
-	printf("²ã´Î±éÀúÐòÁÐ:");
+	printf("äºŒå‰æ ‘b:");DispBTNode(b);printf("\n");
+	printf("å…ˆåºéåŽ†åºåˆ—:\n");
+	printf("  éžé€’å½’ç®—æ³•:");PreOrder1(b);
+	printf("ä¸­åºéåŽ†åºåˆ—:\n");
+	printf("  éžé€’å½’ç®—æ³•:");InOrder1(b);
+	printf("åŽåºéåŽ†åºåˆ—:\n");
+	printf("  éžé€’å½’ç®—æ³•:");PostOrder1(b);	
+	printf("å±‚æ¬¡éåŽ†åºåˆ—:");
 	TravLevel(b);
 	DestroyBTNode(b);
 }

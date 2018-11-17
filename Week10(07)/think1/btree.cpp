@@ -4,29 +4,29 @@
 typedef char ElemType;
 typedef struct node
 {
-	ElemType data;				//Êý¾ÝÔªËØ
-	struct node *lchild;		//Ö¸Ïò×óº¢×Ó
-	struct node *rchild;		//Ö¸ÏòÓÒº¢×Ó
+	ElemType data;				//æ•°æ®å…ƒç´ 
+	struct node *lchild;		//æŒ‡å‘å·¦å­©å­
+	struct node *rchild;		//æŒ‡å‘å³å­©å­
 } BTNode;
-void CreateBTNode(BTNode *&b,char *str)		//ÓÉstr´®´´½¨¶þ²æÁ´
+void CreateBTNode(BTNode *&b,char *str)		//ç”±strä¸²åˆ›å»ºäºŒå‰é“¾
 {
 	BTNode *St[MaxSize],*p=NULL;
 	int top=-1,k,j=0;  
 	char ch;
-	b=NULL;				//½¨Á¢µÄ¶þ²æÊ÷³õÊ¼Ê±Îª¿Õ
+	b=NULL;				//å»ºç«‹çš„äºŒå‰æ ‘åˆå§‹æ—¶ä¸ºç©º
 	ch=str[j];
-	while (ch!='\0')	//strÎ´É¨ÃèÍêÊ±Ñ­»·
+	while (ch!='\0')	//stræœªæ‰«æå®Œæ—¶å¾ªçŽ¯
 	{
    	   	switch(ch) 
 		{
-		case '(':top++;St[top]=p;k=1; break;		//Îª×ó½Úµã
+		case '(':top++;St[top]=p;k=1; break;		//ä¸ºå·¦èŠ‚ç‚¹
 		case ')':top--;break;
-		case ',':k=2; break;                      	//ÎªÓÒ½Úµã
+		case ',':k=2; break;                      	//ä¸ºå³èŠ‚ç‚¹
 		default:p=(BTNode *)malloc(sizeof(BTNode));
 			p->data=ch;p->lchild=p->rchild=NULL;
-		         	if (b==NULL)                    //pÖ¸Ïò¶þ²æÊ÷µÄ¸ù½Úµã
+		         	if (b==NULL)                    //pæŒ‡å‘äºŒå‰æ ‘çš„æ ¹èŠ‚ç‚¹
 						b=p;
-					else  							//ÒÑ½¨Á¢¶þ²æÊ÷¸ù½Úµã
+					else  							//å·²å»ºç«‹äºŒå‰æ ‘æ ¹èŠ‚ç‚¹
 					{	
 						switch(k) 
 						{
@@ -40,7 +40,7 @@ void CreateBTNode(BTNode *&b,char *str)		//ÓÉstr´®´´½¨¶þ²æÁ´
 	}
 }
 
-void DispBTNode(BTNode *b)	//ÒÔÀ¨ºÅ±íÊ¾·¨Êä³ö¶þ²æÊ÷
+void DispBTNode(BTNode *b)	//ä»¥æ‹¬å·è¡¨ç¤ºæ³•è¾“å‡ºäºŒå‰æ ‘
 {
 	if (b!=NULL)
 	{
@@ -67,25 +67,25 @@ void DestroyBTNode(BTNode *&b)
 	}
 }
 
-void PreOrder1(BTNode *b)      //ÏÈÐò±éÀúµÄ·ÇµÝ¹éËã·¨
+void PreOrder1(BTNode *b)      //å…ˆåºéåŽ†çš„éžé€’å½’ç®—æ³•
 {
 	BTNode *St[MaxSize],*p;
     int top=-1;
     if (b!=NULL) 
     {
-        top++;					//¸ù½ÚµãÈëÕ»
+        top++;					//æ ¹èŠ‚ç‚¹å…¥æ ˆ
         St[top]=b;
-        while (top>-1)				//Õ»²»Îª¿ÕÊ±Ñ­»·
+        while (top>-1)				//æ ˆä¸ä¸ºç©ºæ—¶å¾ªçŽ¯
         {
-            p=St[top];				//ÍËÕ»²¢·ÃÎÊ¸Ã½Úµã
+            p=St[top];				//é€€æ ˆå¹¶è®¿é—®è¯¥èŠ‚ç‚¹
             top--;
             printf("%c ",p->data);
-            if (p->rchild!=NULL)	//ÓÒº¢×ÓÈëÕ»
+            if (p->rchild!=NULL)	//å³å­©å­å…¥æ ˆ
 			{
                top++;
                St[top]=p->rchild;
 			}
-            if (p->lchild!=NULL)	//×óº¢×ÓÈëÕ»
+            if (p->lchild!=NULL)	//å·¦å­©å­å…¥æ ˆ
 			{
                top++;
                St[top]=p->lchild;
@@ -94,7 +94,7 @@ void PreOrder1(BTNode *b)      //ÏÈÐò±éÀúµÄ·ÇµÝ¹éËã·¨
 		printf("\n");
 	}
 }
-void InOrder1(BTNode *b)               //ÖÐÐò±éÀúµÄ·ÇµÝ¹éËã·¨
+void InOrder1(BTNode *b)               //ä¸­åºéåŽ†çš„éžé€’å½’ç®—æ³•
 {
 	BTNode *St[MaxSize],*p;
 	int top=-1;
@@ -120,35 +120,35 @@ void InOrder1(BTNode *b)               //ÖÐÐò±éÀúµÄ·ÇµÝ¹éËã·¨
 		printf("\n");
 	}
 }
-void PostOrder1(BTNode *b)            //ºóÐò±éÀúµÄ·ÇµÝ¹éËã·¨     
+void PostOrder1(BTNode *b)            //åŽåºéåŽ†çš„éžé€’å½’ç®—æ³•     
 {
 	BTNode *St[MaxSize];
 	BTNode *p;
-	int flag,top=-1;						//Õ»Ö¸ÕëÖÃ³õÖµ
+	int flag,top=-1;						//æ ˆæŒ‡é’ˆç½®åˆå€¼
 	if (b!=NULL)
 	{
 		do
 		{
-			while (b!=NULL)					//½«tµÄËùÓÐ×ó½ÚµãÈëÕ»
+			while (b!=NULL)					//å°†tçš„æ‰€æœ‰å·¦èŠ‚ç‚¹å…¥æ ˆ
 			{
 				top++;
 				St[top]=b;
 				b=b->lchild;
 			}
-			p=NULL;							//pÖ¸Ïòµ±Ç°½ÚµãµÄÇ°Ò»¸öÒÑ·ÃÎÊµÄ½Úµã
+			p=NULL;							//pæŒ‡å‘å½“å‰èŠ‚ç‚¹çš„å‰ä¸€ä¸ªå·²è®¿é—®çš„èŠ‚ç‚¹
 			flag=1;	
 			while (top!=-1 && flag)
 			{
-				b=St[top];					//È¡³öµ±Ç°µÄÕ»¶¥ÔªËØ
-				if (b->rchild==p)			//ÓÒ×ÓÊ÷²»´æÔÚ»òÒÑ±»·ÃÎÊ,·ÃÎÊÖ®
+				b=St[top];					//å–å‡ºå½“å‰çš„æ ˆé¡¶å…ƒç´ 
+				if (b->rchild==p)			//å³å­æ ‘ä¸å­˜åœ¨æˆ–å·²è¢«è®¿é—®,è®¿é—®ä¹‹
 				{
-					printf("%c ",b->data);	//·ÃÎÊ*b½Úµã
+					printf("%c ",b->data);	//è®¿é—®*bèŠ‚ç‚¹
 					top--;
-					p=b;					//pÖ¸ÏòÔò±»·ÃÎÊµÄ½Úµã
+					p=b;					//pæŒ‡å‘åˆ™è¢«è®¿é—®çš„èŠ‚ç‚¹
 				}
 				else
 				{
-					b=b->rchild;			//tÖ¸ÏòÓÒ×ÓÊ÷
+					b=b->rchild;			//tæŒ‡å‘å³å­æ ‘
 					flag=0;	
 				}
 			}
@@ -156,26 +156,26 @@ void PostOrder1(BTNode *b)            //ºóÐò±éÀúµÄ·ÇµÝ¹éËã·¨
 		printf("\n");
 	} 
 }
-void TravLevel(BTNode *b)               //²ã´Î±éÀúµÄËã·¨ 
+void TravLevel(BTNode *b)               //å±‚æ¬¡éåŽ†çš„ç®—æ³• 
 {
-	BTNode *Qu[MaxSize];				//¶¨ÒåÑ­»·¶ÓÁÐ
-	int front,rear;						//¶¨Òå¶ÓÊ×ºÍ¶ÓÎ²Ö¸Õë
-	front=rear=0;						//ÖÃ¶ÓÁÐÎª¿Õ¶ÓÁÐ
+	BTNode *Qu[MaxSize];				//å®šä¹‰å¾ªçŽ¯é˜Ÿåˆ—
+	int front,rear;						//å®šä¹‰é˜Ÿé¦–å’Œé˜Ÿå°¾æŒ‡é’ˆ
+	front=rear=0;						//ç½®é˜Ÿåˆ—ä¸ºç©ºé˜Ÿåˆ—
     if (b!=NULL) 
 		printf("%c ",b->data);
-    rear++;								//½ÚµãÖ¸Õë½øÈë¶ÓÁÐ
+    rear++;								//èŠ‚ç‚¹æŒ‡é’ˆè¿›å…¥é˜Ÿåˆ—
 	Qu[rear]=b;
-    while (rear!=front)					//¶ÓÁÐ²»Îª¿Õ
+    while (rear!=front)					//é˜Ÿåˆ—ä¸ä¸ºç©º
     {
 		front=(front+1)%MaxSize;
-		b=Qu[front];					//¶ÓÍ·³ö¶ÓÁÐ
-		if (b->lchild!=NULL)			//Êä³ö×óº¢×Ó,²¢Èë¶ÓÁÐ
+		b=Qu[front];					//é˜Ÿå¤´å‡ºé˜Ÿåˆ—
+		if (b->lchild!=NULL)			//è¾“å‡ºå·¦å­©å­,å¹¶å…¥é˜Ÿåˆ—
 		{
 			printf("%c ",b->lchild->data);
 			rear=(rear+1)%MaxSize;
 			Qu[rear]=b->lchild;
 		}
-		if (b->rchild!=NULL)			//Êä³öÓÒº¢×Ó,²¢Èë¶ÓÁÐ
+		if (b->rchild!=NULL)			//è¾“å‡ºå³å­©å­,å¹¶å…¥é˜Ÿåˆ—
 		{
 			printf("%c ",b->rchild->data);
 			rear=(rear+1)%MaxSize;

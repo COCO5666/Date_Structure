@@ -6,33 +6,28 @@
 --------------------Configuration: Test05_2_A_1 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\409\AppData\Local\Temp\RSP63AE.tmp" with contents
+Creating temporary file "C:\Users\zj175\AppData\Local\Temp\RSPCA67.tmp" with contents
 [
-/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Test05_2_A_1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
-"C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp"
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Test05_2_A_1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week10(07)\Test05_2_A_1\main.cpp"
 ]
-Creating command line "cl.exe @C:\Users\409\AppData\Local\Temp\RSP63AE.tmp" 
-Creating temporary file "C:\Users\409\AppData\Local\Temp\RSP63AF.tmp" with contents
+Creating command line "cl.exe @C:\Users\zj175\AppData\Local\Temp\RSPCA67.tmp" 
+Creating temporary file "C:\Users\zj175\AppData\Local\Temp\RSPCA68.tmp" with contents
 [
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Test05_2_A_1.pdb" /debug /machine:I386 /out:"Debug/Test05_2_A_1.exe" /pdbtype:sept 
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Test05_2_A_1.pdb" /debug /machine:I386 /out:"Debug/Test05_2_A_1.exe" /pdbtype:sept 
 ".\Debug\main.obj"
+".\Debug\LBTNode.obj"
 ]
-Creating command line "link.exe @C:\Users\409\AppData\Local\Temp\RSP63AF.tmp"
+Creating command line "link.exe @C:\Users\zj175\AppData\Local\Temp\RSPCA68.tmp"
 <h3>Output Window</h3>
 Compiling...
 main.cpp
-C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp(92) : error C2065: 'DispBTNode' : undeclared identifier
-C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp(94) : error C2065: 'PreOrder1' : undeclared identifier
-C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp(96) : error C2065: 'InOrder1' : undeclared identifier
-C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp(98) : error C2065: 'PostOrder1' : undeclared identifier
-C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp(100) : error C2065: 'TravLevel' : undeclared identifier
-C:\Users\409\Desktop\Week10(07)\Test05_2_A_1\main.cpp(101) : error C2065: 'DestroyBTNode' : undeclared identifier
-执行 cl.exe 时出错.
+Linking...
 
 
 
 <h3>Results</h3>
-Test05_2_A_1.exe - 1 error(s), 0 warning(s)
+Test05_2_A_1.exe - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>
