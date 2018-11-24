@@ -6,25 +6,26 @@
 --------------------Configuration: Week11_A_1 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\409\AppData\Local\Temp\RSP26F7.tmp" with contents
+Creating temporary file "C:\Users\zj175\AppData\Local\Temp\RSP706E.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Week11_A_1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"C:\Users\409\Desktop\Week11(08)_实验五_3\Week11_A_1\main.cpp"
-"C:\Users\409\Desktop\Week11(08)_实验五_3\Week11_A_1\HaffmanCoding.cpp"
+"D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week11(08)_实验五_3\Week11_A_1\HaffmanCoding.cpp"
+"D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week11(08)_实验五_3\Week11_A_1\main.cpp"
 ]
-Creating command line "cl.exe @C:\Users\409\AppData\Local\Temp\RSP26F7.tmp" 
-Creating temporary file "C:\Users\409\AppData\Local\Temp\RSP26F8.tmp" with contents
+Creating command line "cl.exe @C:\Users\zj175\AppData\Local\Temp\RSP706E.tmp" 
+Creating temporary file "C:\Users\zj175\AppData\Local\Temp\RSP706F.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Week11_A_1.pdb" /debug /machine:I386 /out:"Debug/Week11_A_1.exe" /pdbtype:sept 
-".\Debug\main.obj"
 ".\Debug\HaffmanCoding.obj"
+".\Debug\main.obj"
 ]
-Creating command line "link.exe @C:\Users\409\AppData\Local\Temp\RSP26F8.tmp"
+Creating command line "link.exe @C:\Users\zj175\AppData\Local\Temp\RSP706F.tmp"
 <h3>Output Window</h3>
 Compiling...
-main.cpp
 HaffmanCoding.cpp
+main.cpp
 Linking...
+LINK : LNK6004: Debug/Week11_A_1.exe not found or not built by the last incremental link; performing full link
 
 
 
