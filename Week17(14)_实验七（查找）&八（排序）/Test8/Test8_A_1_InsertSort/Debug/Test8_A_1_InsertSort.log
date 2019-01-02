@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week17(14)_实验七（查找）&八（排序）\Test8\Test8_A_1_InsertSort\main.cpp(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week17(14)_实验七（查找）&八（排序）\Test8\Test8_A_1_InsertSort\main.cpp(25): warning C4326: “main”的返回类型应为“int”而非“void”
+D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week17(14)_实验七（查找）&八（排序）\Test8\Test8_A_1_InsertSort\main.cpp(62): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“RecType”
+  Test8_A_1_InsertSort.vcxproj -> D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week17(14)_实验七（查找）&八（排序）\Test8\Debug\Test8_A_1_InsertSort.exe

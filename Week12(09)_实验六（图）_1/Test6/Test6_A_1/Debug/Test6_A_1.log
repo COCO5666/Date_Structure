@@ -1,0 +1,6 @@
+﻿  graph.cpp
+  main.cpp
+D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week12(09)_实验六（图）_1\Test6_A_1\Test6_A_1\main.cpp(6): warning C4326: “main”的返回类型应为“int”而非“void”
+D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week12(09)_实验六（图）_1\Test6_A_1\Test6_A_1\main.cpp(8): warning C4101: “g1”: 未引用的局部变量
+  正在生成代码...
+  Test6_A_1.vcxproj -> D:\0COCO\本科\大二上学期\数据结构-习题和实验代码\Week12(09)_实验六（图）_1\Test6_A_1\Debug\Test6_A_1.exe
